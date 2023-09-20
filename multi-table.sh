@@ -18,8 +18,7 @@ for idx in $(seq $NUM1)
 do
 	for idx2 in $(seq $NUM2)
 	do
-		mul=`expr $idx '*' $idx2`
-		printf "%d*%d=%d\t" $idx $idx2 $mul
+		printf "%d*%d=%d\t" $idx $idx2 $(expr $idx '*' $idx2)
 	done
 	printf "\n"
 done
